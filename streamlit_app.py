@@ -46,7 +46,7 @@ def main():
         st.write(cover_letter[:500])  # Display first 500 characters
 
 def generate_response(prompt):
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.getenv('OPENAI_API_KEY')
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
